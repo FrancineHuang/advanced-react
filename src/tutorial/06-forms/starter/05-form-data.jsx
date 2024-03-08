@@ -4,8 +4,20 @@ const UncontrolledInputs = () => {
   const [value, setValue] = useState(0);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+    e.preventDefault()
+
+    const formData = new FormData(e.currentTarget)
+
+    const name = formData.get('name')
+    console.log(name)
+
+    const newUser = Object.fromEntries(formData)
+    console.log(newUser)
+
+    setValue(value + 1)
+    e.currentTarget.reset()
+  }
+
   return (
     <div>
       <form className='form' onSubmit={handleSubmit}>
