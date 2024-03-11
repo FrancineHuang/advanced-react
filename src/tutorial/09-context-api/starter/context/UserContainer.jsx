@@ -1,5 +1,3 @@
-import React from 'react'
-
 const UserContainer = ({ user, logout }) => {
     return (
         <div className="user-container">
