@@ -1,4 +1,4 @@
-import Starter from './tutorial/08-custom-hooks/starter/02-fetch-data.jsx'
+import Starter from './tutorial/11-performance/starter/01-lower-state'
 
 function App() {
   return (
